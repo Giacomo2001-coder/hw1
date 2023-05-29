@@ -1,0 +1,152 @@
+header{
+    font-family: 'Notable', sans-serif;
+    background-color: rgba(255, 179, 0, 0.685);
+    border-radius: 6px;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.nav-links a {
+ text-decoration: none;
+
+}
+.logo {
+  margin-left: 1%;
+  font-size: 2em;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.logo span{
+    font-size: 1em;
+    color: rgb(197, 118, 0);
+    
+}
+.logo p{
+    color: rgb(255, 140, 0);
+    margin: 2%;
+}
+.menu {
+ display: flex;
+ font-size: 1.2rem;
+ list-style-type: none;
+ flex-wrap: wrap;
+}
+    
+.menu li {
+ padding: 14px 20px;
+ margin-top: 1.5%;
+ margin-left: 2em;
+ margin-right: 2em;
+ border: 2px solid white;
+ border-radius: 20px;
+}
+.menu li a{
+    color:  rgb(255, 140, 0);
+}
+.menu li:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.menu #active {
+  background-color: rgb(134, 47, 47);
+  cursor: pointer;
+}
+.menu #active a{
+   color:  orange;
+}
+.menu #active:hover{
+    border-color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+#FlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#FlexVerticalContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#filter{
+padding: 10px 18px;
+margin-bottom: 2%;
+margin-top: 1%;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+border-radius: 6px;
+background-color: rgba(250, 196, 69, 0.685) ;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+label input {
+    background-color: rgba(255, 255, 255, 0.685);
+    border: 4px solid orange;
+    border-radius: 8px;
+    margin-left: 0.5em;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 20px;
+}
+#FlexHorizzontalContainer {
+    width: 60%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .divRecipe{
+    cursor: pointer;
+  }
+  .divRecipe img{
+    width: 40%;
+  }
+  .divRecipe h1{
+    font-size: 1.5em;
+  }
+  
+  
+  @media (max-width:500px){
+    #FlexContainer{
+        flex-direction:column;
+        margin-top: 10%;
+    }
+    .divRecipe h1{
+        font-size: 1.5em;
+    }
+    .divRecipe img{
+        width: 100%;
+    }
+    .menu li {
+        margin-left: 0;
+        margin-right:0;
+       }
+       .menu #active {
+        margin-left: 25%;
+       }
+  }

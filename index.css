@@ -1,0 +1,220 @@
+body {
+    margin:0;
+    padding: 0;
+    background-image: url('images/indexBackground.jpg');
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header{
+    font-family: 'Notable', sans-serif;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.nav-links a {
+ text-decoration: none;
+ color: rgb(253, 178, 40);
+}
+.logo {
+  margin-left: 1%;
+  font-size: 3em;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.logo span{
+    font-size: 1em;
+    color: white;
+    
+}
+.logo p{
+    color: orange;
+    margin: 2%;
+}
+.menu {
+ display: flex;
+ font-size: 1.6rem;
+ list-style-type: none;
+ flex-wrap: wrap;
+}
+    
+.menu li {
+ padding: 14px 20px;
+ margin-top: 1.5%;
+ margin-left: 2em;
+ margin-right: 2em;
+ border: 2px solid white;
+ border-radius: 20px;
+}
+.menu li:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.menu form{
+    margin-top: 1.5%;
+}
+
+.menu #active {
+  background-color: rgb(134, 47, 47);
+  cursor: pointer;
+}
+.menu #active a{
+   color:  orange;
+}
+.menu #active:hover{
+    border-color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+#FlexContainer {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .FlexItem {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 0.5%;
+  }
+  #AbsoluteBlock {
+    position: relative;
+   
+  }
+   #AbsoluteBlock img{
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+    width: 90%;
+    height: 600px;
+} 
+  #AbsoluteBlock p{
+    position: absolute;
+    top: 10%;
+    margin-left: 12%;
+    color: orange;
+    font-size: 1.8em;
+
+  }
+  #AbsoluteBlock #SubParagraph{
+    font-family: 'Notable', sans-serif;
+    position: absolute;
+    font-size: 1.8em;
+    top: 55%;
+    margin-left: 20%;
+    color: orange;
+  }
+  #AbsoluteBlock h1{
+   padding: 10px;
+   border: 2px solid white;
+   border-radius: 14px;
+   top: 55%;
+   margin-left: 50%;
+   margin-right: 50%;
+   color: #ffffff;
+   position: absolute;
+  }
+  #AbsoluteBlock h1 a {
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+  }
+  #AbsoluteBlock h1:hover{
+    background-color: black;
+    border-color: orange;
+    transition: 0.5s;
+  }
+  .FlexItem p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  footer 
+  { 
+    margin-top:1%;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(0, 0, 0, 0.514);
+    text-align: center;
+  }
+  #footer {
+    position: absolute;
+    margin-left: 45%; 
+    margin-right: 45%; 
+    bottom: 0;
+    color: white;
+  }
+  
+  #footer a{
+    color: lightblue;
+    text-decoration: none;
+  }
+  footer a:hover{
+    color: rgb(1, 190, 253);
+  }
+  
+  @media (max-width: 500px){
+    .navbar {
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links {
+      margin-top: 1%;
+    }
+    .logo {
+      font-size: 1.5em;
+    }
+    .logo span{
+        font-size: 1.5em;
+        
+    }
+    .menu {
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+    }
+    .menu form{
+      text-align: center;
+    }
+    .menu #submit{
+      width:75%;
+      margin-top: 2%;
+      margin-right: 0;
+    }
+     #AbsoluteBlock img{
+      width: 100%;
+  } 
+    #AbsoluteBlock p{
+      top: 10%;
+      margin-left: 0%;
+      color: rgb(238, 157, 76);
+      font-size: 1.3em;
+  
+    }
+    #AbsoluteBlock #SubParagraph{
+      font-size: 1.8em;
+      top: 40%;
+      margin-left: 0%;
+    }
+    #AbsoluteBlock h1{
+     top: 50%;
+     margin-left: 25%;
+     margin-right: 0%;
+    }
+    footer {
+      margin-top: 8%;
+     }
+    #footer {
+      margin-left: 28%;
+      margin-right: 28%;
+    }
+  }
